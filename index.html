@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Michi 游戏工作室</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo-title">
+      <img src="LOGO.png" alt="Michi LOGO" class="logo">
+      <span class="studio-name" data-i18n="studioName">Michi 游戏工作室</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#about" data-i18n="navAbout">关于我们</a>
+      <a href="#team" data-i18n="navTeam">团队介绍</a>
+      <a href="#games" data-i18n="navGames">游戏</a>
+      <a href="#vision" data-i18n="navVision">我们的愿景</a>
+      <a href="#contact" data-i18n="navContact">联系我们</a>
+    </nav>
+    <div class="lang-switch">
+      <button onclick="setLang('zh')" id="lang-zh">中文</button>
+      <button onclick="setLang('en')" id="lang-en">EN</button>
+      <button onclick="setLang('ja')" id="lang-ja">日本語</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="LOGO.png" alt="Michi LOGO" class="hero-logo">
+      <h1 class="slogan" data-i18n="slogan">探索游戏道（GAME MICHI）</h1>
+    </section>
+
+    <section id="about" class="about">
+      <h2 data-i18n="aboutTitle">关于Michi</h2>
+      <p data-i18n="aboutContent">
+        Michi游戏工作室由一群拥有10年以上游戏开发经验的热爱者创立。我们曾为多个知名品牌服务，深知行业的复杂与挑战。厌倦了反复的需求和繁琐的沟通，我们决定打造属于自己的创意空间，专注于制作和发行跨平台的轻度休闲游戏。我们相信，游戏不仅是娱乐，更是人与人之间沟通和表达的桥梁。
+      </p>
+    </section>
+
+    <section id="team" class="team">
+      <h2 data-i18n="teamTitle">我们的团队</h2>
+      <ul>
+        <li data-i18n="team1">10年以上游戏开发经验，涵盖策划、美术、程序、音效等多领域</li>
+        <li data-i18n="team2">曾服务于国内外知名游戏品牌，积累丰富项目管理与跨文化协作经验</li>
+        <li data-i18n="team3">热爱创新，追求极致玩家体验，勇于尝试新玩法与新技术</li>
+        <li data-i18n="team4">团队氛围开放包容，鼓励每一位成员表达创意与想法</li>
+      </ul>
+    </section>
+
+    <section id="vision" class="vision">
+      <h2 data-i18n="visionTitle">我们的愿景</h2>
+      <p data-i18n="visionContent">
+        基于丰富的行业knowhow，我们致力于探索游戏的更多可能性。Michi希望通过轻松有趣的游戏体验，陪伴每一位玩家，探索属于自己的“游戏道”。我们相信，游戏的本质是探索与成长，未来我们将持续创新，打造更多让人会心一笑的作品。
+      </p>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div data-i18n="contactInfo">联系方式：contact@michi.com</div>
+    <div data-i18n="copyright">© 2024 Michi 游戏工作室</div>
+  </footer>
+  <script src="i18n.js"></script>
+  <script>
+    // 默认英文
+    setLang('en');
+  </script>
+</body>
+</html> 
